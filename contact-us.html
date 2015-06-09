@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Home - Home Page | Photo Art - Free Website Template from Templates.com</title>
+<title>Contact - Contact | Photo Art - Free Website Template from Templates.com</title>
 <meta charset="utf-8">
 <meta name="description" content="Place your description here" />
 <meta name="keywords" content="put, your, keyword, here" />
@@ -29,7 +29,7 @@
   	<script type="text/javascript" src="js/html5.js"></script>
   <![endif]-->
 </head>
-<body id="page1">
+<body id="page5">
 <div class="wrap">
    <!-- header -->
    <header>
@@ -37,11 +37,11 @@
          <h1><a href="index.html">Photo <span>Art</span></a></h1>
          <nav>
             <ul>
-               <li><a href="index.html" class="active"><span><span>Home</span></span></a></li>
+               <li><a href="index.html"><span><span>Home</span></span></a></li>
                <li><a href="about-us.html"><span><span>About</span></span></a></li>
                <li><a href="privacy.html"><span><span>Privacy</span></span></a></li>
                <li><a href="gallery.html"><span><span>Gallery</span></span></a></li>
-               <li><a href="contact-us.html"><span><span>Contact</span></span></a></li>
+               <li><a href="contact-us.html" class="active"><span><span>Contact</span></span></a></li>
                <li><a href="sitemap.html"><span><span>Sitemap</span></span></a></li>
             </ul>
          </nav>
@@ -144,20 +144,39 @@
       <section id="content">
          <div class="wrapper">
             <article class="col-1">
-               <h2>Welcome!</h2>
-               <img src="images/1page-img.jpg" class="img-indent">
-               <p>Photo Art is a free web template created by TemplateMonster team, optimized for 1024X768 screen resolution. It is also HTML5 &amp; CSS3 valid. This website has several pages: <a href="index.html">Home</a>, <a href="about-us.html">About</a>, <a href="privacy.html">Privacy</a>, <a href="gallery.html">Gallery</a>, <a href="contact-us.html">Contact</a> (contact form – doesn’t work), <a href="sitemap.html">Sitemap</a>.</p>
+               <h2>Contact Form:</h2>
+               <form id="contacts-form" action="">
+                  <fieldset>
+                  <div class="field">
+                     <label>Your Name:</label>
+                     <input type="text" value=""/>
+                  </div>
+                  <div class="field">
+                     <label>Your E-mail:</label>
+                     <input type="email" value=""/>
+                  </div>
+                  <div class="field">
+                     <label>Your Website:</label>
+                     <input type="text" value=""/>
+                  </div>
+                  <div>
+                     <label>Your Message:</label>
+                     <textarea cols="1" rows="1"></textarea>
+                  </div>
+                  <div class="alignright"><a href="#" onClick="document.getElementById('contacts-form').submit()">Send Your Message!</a></div>
+                  </fieldset>
+               </form>
             </article>
             <article class="col-2">
-               <h2>Fresh News:</h2>
-               <ul class="news">
-                  <li><span>4</span><strong><a href="#">Nam libero tempore</a><br>
-                     Cum soluta nobis est eligendi optio cumque.</strong></li>
-                  <li><span>2</span><strong><a href="#">Ut enim ad minima veniam</a><br>
-                     Quis autem vel eum iure reprehenderit qui.</strong></li>
-                  <li><span>5</span><strong><a href="#">Sed perspiciatis unde</a><br>
-                     Nemo enim ipsam voluptatem quia voluptas aspernatur.</strong></li>
-               </ul>
+               <h2>My Contacts:</h2>
+               <address>
+               <span>Zip Code:</span>50122<br>
+               <span>Country:</span>USA<br>
+               <span>City:</span>New York<br>
+               <span>Telephone:</span>+354 5635600<br>
+               <span>Fax:</span>+354 5635620<br>
+               <span>Email:</span><a href="#">businessco@mail.com</a>
+               </address>
             </article>
          </div>
       </section>
