@@ -1,175 +1,608 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>Home - Home Page | Photo Art - Free Website Template from Templates.com</title>
-<meta charset="utf-8">
-<meta name="description" content="Place your description here" />
-<meta name="keywords" content="put, your, keyword, here" />
-<meta name="author" content="Templates.com - website templates provider" />
-<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-<script type="text/javascript" src="js/jquery-1.4.2.min.js" ></script>
-<script type="text/javascript" src="http://info.template-help.com/files/ie6_warning/ie6_script.js"></script>
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/cufon-replace.js"></script>
-<script type="text/javascript" src="js/AG_Foreigner_Light-Plain_400.font.js"></script>
-<script type="text/javascript" src="js/Myriad_Pro_400.font.js"></script>
-<script type="text/javascript" src="js/tabs.js"></script>
-<script type="text/javascript" src="js/jquery.faded.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<!--[if lt IE 7]>
-     <link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="screen">
-     <script type="text/javascript" src="js/ie_png.js"></script>
-     <script type="text/javascript">
-        ie_png.fix('.png, ul.tabs li a, ul.tabs li a span, ul.tabs li a span, figure img');
-     </script>
-<![endif]-->
-<!--[if lt IE 9]>
-  	<script type="text/javascript" src="js/html5.js"></script>
-  <![endif]-->
+<meta charset="UTF-8">
+<title>HTML5+CSS3城市场景动画</title>
+<style>
+body {margin:0; padding:0; background-color:#ddf5f7;}
+/*-------- 天空背景以及动画 --------*/
+.stage {
+	position: relative;
+	overflow: hidden;
+	height: 600px;
+	background: #ddf5f7;
+	-webkit-animation: skyset 110s infinite linear;
+	-moz-animation: skyset 110s infinite linear;
+	-o-animation: skyset 110s infinite linear;
+	animation: skyset 110s infinite linear;
+}
+ @-webkit-keyframes skyset {
+ 0% {
+ background: #ddf5f7;
+}
+ 23% {
+ background: #ddf5f7;
+}
+ 25% {
+ background: #350847;
+}
+ 27% {
+ background: #0f192c;
+}
+ 50% {
+ background: #0f192c;
+}
+ 68% {
+ background: #0f192c;
+}
+ 75% {
+ background: #f9c7b8;
+}
+ 82% {
+ background: #ddf5f7;
+}
+ 100% {
+ background: #ddf5f7;
+}
+}
+ @-moz-keyframes skyset {
+ 0% {
+ background: #ddf5f7;
+}
+ 23% {
+ background: #ddf5f7;
+}
+ 25% {
+ background: #350847;
+}
+ 27% {
+ background: #0f192c;
+}
+ 50% {
+ background: #0f192c;
+}
+ 68% {
+ background: #0f192c;
+}
+ 75% {
+ background: #f9c7b8;
+}
+ 82% {
+ background: #ddf5f7;
+}
+ 100% {
+ background: #ddf5f7;
+}
+}
+@-o-keyframes skyset {
+ 0% {
+ background: #ddf5f7;
+}
+ 23% {
+ background: #ddf5f7;
+}
+ 25% {
+ background: #350847;
+}
+ 27% {
+ background: #0f192c;
+}
+ 50% {
+ background: #0f192c;
+}
+ 68% {
+ background: #0f192c;
+}
+ 75% {
+ background: #f9c7b8;
+}
+ 82% {
+ background: #ddf5f7;
+}
+ 100% {
+ background: #ddf5f7;
+}
+}
+ @keyframes skyset {
+ 0% {
+ background: #ddf5f7;
+}
+ 23% {
+ background: #ddf5f7;
+}
+ 25% {
+ background: #350847;
+}
+ 27% {
+ background: #0f192c;
+}
+ 50% {
+ background: #0f192c;
+}
+ 68% {
+ background: #0f192c;
+}
+ 75% {
+ background: #f9c7b8;
+}
+ 82% {
+ background: #ddf5f7;
+}
+ 100% {
+ background: #ddf5f7;
+}
+}
+/*-------- 天黑场景遮罩层以及动画 --------*/
+.nightOverlay {
+	z-index: 9999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(15, 25, 44, 0.7);
+	opacity: 0;
+	-webkit-animation: set 110s infinite linear;
+	-moz-animation: set 110s infinite linear;
+	-o-animation: set 110s infinite linear;
+	animation: set 110s infinite linear;
+}
+ @-webkit-keyframes set {
+ 0% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0;
+}
+ 50% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+ opacity: 1;
+}
+ 100% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0;
+}
+}
+ @-moz-keyframes set {
+ 0% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0;
+}
+ 50% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+ opacity: 1;
+}
+ 100% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0;
+}
+}
+ @-o-keyframes set {
+ 0% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0;
+}
+ 50% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+ opacity: 1;
+}
+ 100% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0;
+}
+}
+ @keyframes set {
+ 0% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0;
+}
+ 50% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+ opacity: 1;
+}
+ 100% {
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ opacity: 0;
+}
+}
+/*-------- 太阳自转以及动画 --------*/
+.rotation {
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	top: 50%;
+	margin: -350px 0 0 -350px;
+	height: 700px;
+	width: 700px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-animation: rotation 110s infinite linear;
+	-moz-animation: rotation 110s infinite linear;
+	-o-animation: rotation 110s infinite linear;
+	animation: rotation 110s infinite linear;
+}
+ @-webkit-keyframes rotation {
+ 0% {
+ -webkit-transform: rotate(45deg);
+}
+ 100% {
+ -webkit-transform: rotate(405deg);
+}
+}
+ @-moz-keyframes rotation {
+ 0% {
+ -moz-transform: rotate(45deg);
+}
+ 100% {
+ -moz-transform: rotate(405deg);
+}
+}
+ @-o-keyframes rotation {
+ 0% {
+ -o-transform: rotate(45deg);
+}
+ 100% {
+ -o-transform: rotate(405deg);
+}
+}
+ @keyframes rotation {
+ 0% {
+ transform: rotate(45deg);
+}
+ 100% {
+ transform: rotate(405deg);
+}
+}
+ 
+.sun, .moon {
+	position: absolute;
+	height: 145px;
+	width: 145px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+.sun {
+	top: 0;
+	left: 0;
+	background: yellow;
+}
+.moon {
+	bottom: 0;
+	right: 0;
+	background: black;
+}
+/*-------- 云以及动画 --------*/
+.cloud {
+	position: absolute;
+}
+.cloud.small {
+	z-index: 1;
+	top: 5%;
+	left: 15%;
+	background: url(images/cloudSmall.png) no-repeat no-repeat center;
+	height: 50px;
+	width: 89px;
+	-webkit-animation: cloudSmall 165s infinite;
+	-moz-animation: cloudSmall 165s infinite;
+	-o-animation: cloudSmall 165s infinite;
+	animation: cloudSmall 165s infinite;
+}
+.cloud.medium {
+	z-index: 3;
+	top: 25%;
+	left: 30%;
+	background: url(images/cloudMedium.png) no-repeat no-repeat center;
+	height: 92px;
+	width: 159px;
+	-webkit-animation: cloudMedium 80s infinite;
+	-moz-animation: cloudMedium 80s infinite;
+	-o-animation: cloudMedium 80s infinite;
+	animation: cloudMedium 80s infinite;
+}
+.cloud.large {
+	z-index: 2;
+	top: 5%;
+	right: 15%;
+	background: url(images/cloudLarge.png) no-repeat no-repeat center;
+	height: 169px;
+	width: 302px;
+	-webkit-animation: cloudLarge 105s infinite;
+	-moz-animation: cloudLarge 105s infinite;
+	-o-animation: cloudLarge 105s infinite;
+	animation: cloudLarge 105s infinite;
+}
+ @-webkit-keyframes cloudSmall {
+ 0% {
+ left: -8%;
+}
+ 100% {
+ left: 108%;
+}
+}
+ @-moz-keyframes cloudSmall {
+ 0% {
+ left: -5%;
+}
+ 100% {
+ left: 105%;
+}
+}
+ @-o-keyframes cloudSmall {
+ 0% {
+ left: -5%;
+}
+ 100% {
+ left: 105%;
+}
+}
+ @keyframes cloudSmall {
+ 0% {
+ left: -5%;
+}
+ 100% {
+ left: 105%;
+}
+}
+ @-webkit-keyframes cloudMedium {
+ 0% {
+ left: -8%;
+}
+ 100% {
+ left: 108%;
+}
+}
+ @-moz-keyframes cloudMedium {
+ 0% {
+ left: -8%;
+}
+ 100% {
+ left: 108%;
+}
+}
+ @-o-keyframes cloudMedium {
+ 0% {
+ left: -8%;
+}
+ 100% {
+ left: 108%;
+}
+}
+ @keyframes cloudMedium {
+ 0% {
+ left: -8%;
+}
+ 100% {
+ left: 108%;
+}
+}
+ @-webkit-keyframes cloudLarge {
+ 0% {
+ right: -18%;
+}
+ 100% {
+ right: 118%;
+}
+}
+ @-moz-keyframes cloudLarge {
+ 0% {
+ right: -18%;
+}
+ 100% {
+ right: 118%;
+}
+}
+ @-o-keyframes cloudLarge {
+ 0% {
+ right: -18%;
+}
+ 100% {
+ right: 118%;
+}
+}
+ @keyframes cloudLarge {
+ 0% {
+ right: -18%;
+}
+ 100% {
+ right: 118%;
+}
+}
+/*-------- 气球以及动画 --------*/
+.balloon {
+	position: absolute;
+	z-index: 3;
+	top: 5%;
+	right: 20%;
+	background: url(images/balloon.png) no-repeat no-repeat center;
+	height: 227px;
+	width: 157px;
+	-webkit-animation: balloon 30s infinite cubic-bezier(0.91, 0.01, 1, 0.89);
+	-moz-animation: balloon 30s infinite cubic-bezier(0.1, 0.1, 0.95, 0.5);
+	-o-animation: balloon 30s infinite cubic-bezier(0.1, 0.1, 0.95, 0.5);
+	animation: balloon 30s infinite cubic-bezier(0.1, 0.1, 0.95, 0.5);
+}
+ @-webkit-keyframes balloon {
+ 0% {
+ right: -20%;
+ -webkit-transform: rotate(0deg);
+}
+ 5% {
+ right: -20%;
+ -webkit-transform: rotate(0deg);
+}
+ 25% {
+ -webkit-transform: rotate(0deg);
+}
+ 100% {
+ right: 120%;
+ -webkit-transform: rotate(-30deg);
+}
+}
+ @-moz-keyframes balloon {
+ 0% {
+ right: -20%;
+ -moz-transform: rotate(0deg);
+}
+ 5% {
+ right: -20%;
+ -moz-transform: rotate(0deg);
+}
+ 25% {
+ -moz-transform: rotate(0deg);
+}
+ 100% {
+ right: 120%;
+ -moz-transform: rotate(-30deg);
+}
+}
+ @-o-keyframes balloon {
+ 0% {
+ right: -20%;
+ -o-transform: rotate(0deg);
+}
+ 5% {
+ right: -20%;
+ -o-transform: rotate(0deg);
+}
+ 25% {
+ -o-transform: rotate(0deg);
+}
+ 100% {
+ right: 120%;
+ -o-transform: rotate(-30deg);
+}
+}
+ @keyframes balloon {
+ 0% {
+ right: -20%;
+ transform: rotate(0deg);
+}
+ 5% {
+ right: -20%;
+ transform: rotate(0deg);
+}
+ 25% {
+ transform: rotate(0deg);
+}
+ 100% {
+ right: 120%;
+ transform: rotate(-30deg);
+}
+}
+/*-------- 场景组件 --------*/
+.skyline {
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	bottom: 26%;
+	background: url(images/skyline.png) repeat no-repeat;
+	height: 147px;
+}
+.beans {
+	position: absolute;
+	z-index: 4;
+	height: 201px;
+	width: 88px;
+	bottom: 30%;
+	left: 50%;
+	background: url(images/beans.png) no-repeat no-repeat;
+}
+.ground {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
+.ground.front {
+	z-index: 30;
+	background: url(images/groundFront.png) repeat no-repeat center;
+	height: 301px;
+}
+.ground.mid {
+	z-index: 20;
+	background: url(images/groundMid.png) repeat no-repeat;
+	height: 299px;
+}
+.ground.back {
+	z-index: 10;
+	background: url(images/groundBack.png) repeat no-repeat center;
+	height: 281px;
+}
+.dowEventCenter {
+	position: absolute;
+	z-index: 12;
+	bottom: 20%;
+	left: 5%;
+	background: url(images/dowEventCenter.png) no-repeat no-repeat center;
+	height: 236px;
+	width: 524px;
+}
+.planetarium {
+	position: absolute;
+	z-index: 12;
+	bottom: 18%;
+	right: 10%;
+	background: url(images/Planetarium.png) no-repeat no-repeat center;
+	height: 285px;
+	width: 347px;
+}
+.friendshipShell {
+	position: absolute;
+	z-index: 21;
+	bottom: 18%;
+	left: 20%;
+	background: url(images/friendshipShell.png) no-repeat no-repeat center;
+	height: 370px;
+	width: 231px;
+}
+.glockenspiel {
+	position: absolute;
+	z-index: 11;
+	bottom: 26%;
+	right: 50%;
+	background: url(images/Glockenspiel.png) no-repeat no-repeat center;
+	height: 263px;
+	width: 137px;
+}
+
+.title {background-color:rgba(231,112,62,0.56); width:100%; position:fixed; top:0; left:0; font-size:12px; font-family:Verdana, Geneva, sans-serif; z-index:99999;}
+.title a {color:#FFF; text-decoration:none; line-height:24px; padding:0 10px; letter-spacing: 1px;}
+.title_r {float:right;}
+.title_l {float:left;}
+.title a:hover {background:#792e0e;}
+.footer {text-align:center;}
+.footer a {color:#CB653C; text-decoration:none; font-family:Verdana, Geneva, sans-serif; font-size:12px;}
+</style>
 </head>
-<body id="page1">
-<div class="wrap">
-   <!-- header -->
-   <header>
-      <div class="container">
-         <h1><a href="index.html">Photo <span>Art</span></a></h1>
-         <nav>
-            <ul>
-               <li><a href="index.html" class="active"><span><span>Home</span></span></a></li>
-               <li><a href="about-us.html"><span><span>About</span></span></a></li>
-               <li><a href="privacy.html"><span><span>Privacy</span></span></a></li>
-               <li><a href="gallery.html"><span><span>Gallery</span></span></a></li>
-               <li><a href="contact-us.html"><span><span>Contact</span></span></a></li>
-               <li><a href="sitemap.html"><span><span>Sitemap</span></span></a></li>
-            </ul>
-         </nav>
-         <ul class="tabs">
-            <li><a href="#tab1"><span><span>Category 1</span></span></a></li>
-            <li><a href="#tab2"><span><span>Category 2</span></span></a></li>
-            <li><a href="#tab3"><span><span>Category 3</span></span></a></li>
-            <li><a href="#tab4"><span><span>Category 4</span></span></a></li>
-            <li><a href="#tab5"><span><span>Category 5</span></span></a></li>
-         </ul>
-         <div class="tab_container">
-            <div id="tab1" class="tab_content">
-               <div class="faded">
-                  <ul class="big-image">
-                     <li><img src="images/slide1-1big.jpg"></li>
-                     <li><img src="images/slide1-2big.jpg"></li>
-                     <li><img src="images/slide1-3big.jpg"></li>
-                  </ul>
-                  <ul class="pagination">
-                     <li><a href="#" rel="0"><img src="images/slide1-1.jpg"></a></li>
-                     <li><a href="#" rel="1"><img src="images/slide1-2.jpg"></a></li>
-                     <li><a href="#" rel="2"><img src="images/slide1-3.jpg"></a></li>
-                  </ul>
-               </div>
-            </div>
-            <div id="tab2" class="tab_content">
-               <div class="faded">
-                  <ul class="big-image">
-                     <li><img src="images/slide2-1big.jpg"></li>
-                     <li><img src="images/slide2-2big.jpg"></li>
-                     <li><img src="images/slide2-3big.jpg"></li>
-                  </ul>
-                  <ul class="pagination">
-                     <li><a href="#" rel="0"><img src="images/slide2-1.jpg"></a></li>
-                     <li><a href="#" rel="1"><img src="images/slide2-2.jpg"></a></li>
-                     <li><a href="#" rel="2"><img src="images/slide2-3.jpg"></a></li>
-                  </ul>
-               </div>
-            </div>
-            <div id="tab3" class="tab_content">
-               <div class="faded">
-                  <ul class="big-image">
-                     <li><img src="images/slide3-1big.jpg"></li>
-                     <li><img src="images/slide3-2big.jpg"></li>
-                     <li><img src="images/slide3-3big.jpg"></li>
-                  </ul>
-                  <ul class="pagination">
-                     <li><a href="#" rel="0"><img src="images/slide3-1.jpg"></a></li>
-                     <li><a href="#" rel="1"><img src="images/slide3-2.jpg"></a></li>
-                     <li><a href="#" rel="2"><img src="images/slide3-3.jpg"></a></li>
-                  </ul>
-               </div>
-            </div>
-            <div id="tab4" class="tab_content">
-               <div class="faded">
-                  <ul class="big-image">
-                     <li><img src="images/slide4-1big.jpg"></li>
-                     <li><img src="images/slide4-2big.jpg"></li>
-                     <li><img src="images/slide4-3big.jpg"></li>
-                  </ul>
-                  <ul class="pagination">
-                     <li><a href="#" rel="0"><img src="images/slide4-1.jpg"></a></li>
-                     <li><a href="#" rel="1"><img src="images/slide4-2.jpg"></a></li>
-                     <li><a href="#" rel="2"><img src="images/slide4-3.jpg"></a></li>
-                  </ul>
-               </div>
-            </div>
-            <div id="tab5" class="tab_content">
-               <div class="faded">
-                  <ul class="big-image">
-                     <li><img src="images/slide5-1big.jpg"></li>
-                     <li><img src="images/slide5-2big.jpg"></li>
-                     <li><img src="images/slide5-3big.jpg"></li>
-                  </ul>
-                  <ul class="pagination">
-                     <li><a href="#" rel="0"><img src="images/slide5-1.jpg"></a></li>
-                     <li><a href="#" rel="1"><img src="images/slide5-2.jpg"></a></li>
-                     <li><a href="#" rel="2"><img src="images/slide5-3.jpg"></a></li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </div>
-   </header>
-   <div class="container">
-      <!-- aside -->
-      <aside>
-         <div class="inside">
-            <h2>My Clients:</h2>
-            <ul class="list">
-               <li><a href="#">Sed ut perspiciatis</a></li>
-               <li><a href="#">Unde omnis iste</a></li>
-               <li><a href="#">Natus error sit volup</a></li>
-               <li><a href="#">Tatem accusantium</a></li>
-            </ul>
-            <figure><img src="images/extra-img.png"></figure>
-         </div>
-      </aside>
-      <!-- content -->
-      <section id="content">
-         <div class="wrapper">
-            <article class="col-1">
-               <h2>Welcome!</h2>
-               <img src="images/1page-img.jpg" class="img-indent">
-               <p>Photo Art is a free web template created by TemplateMonster team, optimized for 1024X768 screen resolution. It is also HTML5 &amp; CSS3 valid. This website has several pages: <a href="index.html">Home</a>, <a href="about-us.html">About</a>, <a href="privacy.html">Privacy</a>, <a href="gallery.html">Gallery</a>, <a href="contact-us.html">Contact</a> (contact form – doesn’t work), <a href="sitemap.html">Sitemap</a>.</p>
-            </article>
-            <article class="col-2">
-               <h2>Fresh News:</h2>
-               <ul class="news">
-                  <li><span>4</span><strong><a href="#">Nam libero tempore</a><br>
-                     Cum soluta nobis est eligendi optio cumque.</strong></li>
-                  <li><span>2</span><strong><a href="#">Ut enim ad minima veniam</a><br>
-                     Quis autem vel eum iure reprehenderit qui.</strong></li>
-                  <li><span>5</span><strong><a href="#">Sed perspiciatis unde</a><br>
-                     Nemo enim ipsam voluptatem quia voluptas aspernatur.</strong></li>
-               </ul>
-            </article>
-         </div>
-      </section>
-   </div>
+<body>
+<div class="title">
+    <a class="title_l" target="_blank" title="返回首页" href="http://www.jiawin.com"><strong>«</strong> 觉唯</a>
+    <a class="title_r" href="http://www.jiawin.com/html5-css3-urban-scene-animation" title="返回文章">返回文章：HTML5+CSS3城市场景动画</a></span>
 </div>
-<!-- footer -->
-<footer>
-   <div class="container">
-      <div class="inside"> Website template designed by <a class="new_window" href="http://www.templatemonster.com" target="_blank" rel="nofollow">www.templatemonster.com</a><br>
-         3D Models provided by <a class="new_window" href="http://www.templates.com/product/3d-models/" target="_blank" rel="nofollow">www.templates.com</a> </div>
-   </div>
-</footer>
-<script type="text/javascript"> Cufon.now(); </script>
+<section>
+  <div class="stage">
+    <div class="nightOverlay"></div>
+    <div class="skyline"></div>
+    <div class="beans"></div>
+    <div class="ground back"></div>
+    <div class="ground mid"></div>
+    <div class="ground front"></div>
+    <div class="cloud large"></div>
+    <div class="cloud small"></div>
+    <div class="cloud medium"></div>
+    <div class="balloon"></div>
+    <div class="dowEventCenter"></div>
+    <div class="planetarium"></div>
+    <div class="friendshipShell"></div>
+    <div class="glockenspiel"></div>
+    <div class="rotation">
+      <div class="sun"></div>
+      <div class="moon"></div>
+    </div>
+  </div>
+</section>
+<p class="footer"><a title="觉唯" target="_blank" href="http://www.jiawin.com/">By:www.jiawin.com</a></p>
 </body>
 </html>
