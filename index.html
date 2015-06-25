@@ -1,608 +1,152 @@
+<!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>HTML5+CSS3åŸå¸‚åœºæ™¯åŠ¨ç”»</title>
-<style>
-body {margin:0; padding:0; background-color:#ddf5f7;}
-/*-------- å¤©ç©ºèƒŒæ™¯ä»¥åŠåŠ¨ç”» --------*/
-.stage {
-	position: relative;
-	overflow: hidden;
-	height: 600px;
-	background: #ddf5f7;
-	-webkit-animation: skyset 110s infinite linear;
-	-moz-animation: skyset 110s infinite linear;
-	-o-animation: skyset 110s infinite linear;
-	animation: skyset 110s infinite linear;
-}
- @-webkit-keyframes skyset {
- 0% {
- background: #ddf5f7;
-}
- 23% {
- background: #ddf5f7;
-}
- 25% {
- background: #350847;
-}
- 27% {
- background: #0f192c;
-}
- 50% {
- background: #0f192c;
-}
- 68% {
- background: #0f192c;
-}
- 75% {
- background: #f9c7b8;
-}
- 82% {
- background: #ddf5f7;
-}
- 100% {
- background: #ddf5f7;
-}
-}
- @-moz-keyframes skyset {
- 0% {
- background: #ddf5f7;
-}
- 23% {
- background: #ddf5f7;
-}
- 25% {
- background: #350847;
-}
- 27% {
- background: #0f192c;
-}
- 50% {
- background: #0f192c;
-}
- 68% {
- background: #0f192c;
-}
- 75% {
- background: #f9c7b8;
-}
- 82% {
- background: #ddf5f7;
-}
- 100% {
- background: #ddf5f7;
-}
-}
-@-o-keyframes skyset {
- 0% {
- background: #ddf5f7;
-}
- 23% {
- background: #ddf5f7;
-}
- 25% {
- background: #350847;
-}
- 27% {
- background: #0f192c;
-}
- 50% {
- background: #0f192c;
-}
- 68% {
- background: #0f192c;
-}
- 75% {
- background: #f9c7b8;
-}
- 82% {
- background: #ddf5f7;
-}
- 100% {
- background: #ddf5f7;
-}
-}
- @keyframes skyset {
- 0% {
- background: #ddf5f7;
-}
- 23% {
- background: #ddf5f7;
-}
- 25% {
- background: #350847;
-}
- 27% {
- background: #0f192c;
-}
- 50% {
- background: #0f192c;
-}
- 68% {
- background: #0f192c;
-}
- 75% {
- background: #f9c7b8;
-}
- 82% {
- background: #ddf5f7;
-}
- 100% {
- background: #ddf5f7;
-}
-}
-/*-------- å¤©é»‘åœºæ™¯é®ç½©å±‚ä»¥åŠåŠ¨ç”» --------*/
-.nightOverlay {
-	z-index: 9999;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(15, 25, 44, 0.7);
-	opacity: 0;
-	-webkit-animation: set 110s infinite linear;
-	-moz-animation: set 110s infinite linear;
-	-o-animation: set 110s infinite linear;
-	animation: set 110s infinite linear;
-}
- @-webkit-keyframes set {
- 0% {
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
- 50% {
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
- opacity: 1;
-}
- 100% {
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
-}
- @-moz-keyframes set {
- 0% {
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
- 50% {
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
- opacity: 1;
-}
- 100% {
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
-}
- @-o-keyframes set {
- 0% {
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
- 50% {
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
- opacity: 1;
-}
- 100% {
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
-}
- @keyframes set {
- 0% {
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
- 50% {
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
- opacity: 1;
-}
- 100% {
- filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
- opacity: 0;
-}
-}
-/*-------- å¤ªé˜³è‡ªè½¬ä»¥åŠåŠ¨ç”» --------*/
-.rotation {
-	position: absolute;
-	z-index: 1;
-	left: 50%;
-	top: 50%;
-	margin: -350px 0 0 -350px;
-	height: 700px;
-	width: 700px;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-	-webkit-animation: rotation 110s infinite linear;
-	-moz-animation: rotation 110s infinite linear;
-	-o-animation: rotation 110s infinite linear;
-	animation: rotation 110s infinite linear;
-}
- @-webkit-keyframes rotation {
- 0% {
- -webkit-transform: rotate(45deg);
-}
- 100% {
- -webkit-transform: rotate(405deg);
-}
-}
- @-moz-keyframes rotation {
- 0% {
- -moz-transform: rotate(45deg);
-}
- 100% {
- -moz-transform: rotate(405deg);
-}
-}
- @-o-keyframes rotation {
- 0% {
- -o-transform: rotate(45deg);
-}
- 100% {
- -o-transform: rotate(405deg);
-}
-}
- @keyframes rotation {
- 0% {
- transform: rotate(45deg);
-}
- 100% {
- transform: rotate(405deg);
-}
-}
- 
-.sun, .moon {
-	position: absolute;
-	height: 145px;
-	width: 145px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
-}
-.sun {
-	top: 0;
-	left: 0;
-	background: yellow;
-}
-.moon {
-	bottom: 0;
-	right: 0;
-	background: black;
-}
-/*-------- äº‘ä»¥åŠåŠ¨ç”» --------*/
-.cloud {
-	position: absolute;
-}
-.cloud.small {
-	z-index: 1;
-	top: 5%;
-	left: 15%;
-	background: url(images/cloudSmall.png) no-repeat no-repeat center;
-	height: 50px;
-	width: 89px;
-	-webkit-animation: cloudSmall 165s infinite;
-	-moz-animation: cloudSmall 165s infinite;
-	-o-animation: cloudSmall 165s infinite;
-	animation: cloudSmall 165s infinite;
-}
-.cloud.medium {
-	z-index: 3;
-	top: 25%;
-	left: 30%;
-	background: url(images/cloudMedium.png) no-repeat no-repeat center;
-	height: 92px;
-	width: 159px;
-	-webkit-animation: cloudMedium 80s infinite;
-	-moz-animation: cloudMedium 80s infinite;
-	-o-animation: cloudMedium 80s infinite;
-	animation: cloudMedium 80s infinite;
-}
-.cloud.large {
-	z-index: 2;
-	top: 5%;
-	right: 15%;
-	background: url(images/cloudLarge.png) no-repeat no-repeat center;
-	height: 169px;
-	width: 302px;
-	-webkit-animation: cloudLarge 105s infinite;
-	-moz-animation: cloudLarge 105s infinite;
-	-o-animation: cloudLarge 105s infinite;
-	animation: cloudLarge 105s infinite;
-}
- @-webkit-keyframes cloudSmall {
- 0% {
- left: -8%;
-}
- 100% {
- left: 108%;
-}
-}
- @-moz-keyframes cloudSmall {
- 0% {
- left: -5%;
-}
- 100% {
- left: 105%;
-}
-}
- @-o-keyframes cloudSmall {
- 0% {
- left: -5%;
-}
- 100% {
- left: 105%;
-}
-}
- @keyframes cloudSmall {
- 0% {
- left: -5%;
-}
- 100% {
- left: 105%;
-}
-}
- @-webkit-keyframes cloudMedium {
- 0% {
- left: -8%;
-}
- 100% {
- left: 108%;
-}
-}
- @-moz-keyframes cloudMedium {
- 0% {
- left: -8%;
-}
- 100% {
- left: 108%;
-}
-}
- @-o-keyframes cloudMedium {
- 0% {
- left: -8%;
-}
- 100% {
- left: 108%;
-}
-}
- @keyframes cloudMedium {
- 0% {
- left: -8%;
-}
- 100% {
- left: 108%;
-}
-}
- @-webkit-keyframes cloudLarge {
- 0% {
- right: -18%;
-}
- 100% {
- right: 118%;
-}
-}
- @-moz-keyframes cloudLarge {
- 0% {
- right: -18%;
-}
- 100% {
- right: 118%;
-}
-}
- @-o-keyframes cloudLarge {
- 0% {
- right: -18%;
-}
- 100% {
- right: 118%;
-}
-}
- @keyframes cloudLarge {
- 0% {
- right: -18%;
-}
- 100% {
- right: 118%;
-}
-}
-/*-------- æ°”çƒä»¥åŠåŠ¨ç”» --------*/
-.balloon {
-	position: absolute;
-	z-index: 3;
-	top: 5%;
-	right: 20%;
-	background: url(images/balloon.png) no-repeat no-repeat center;
-	height: 227px;
-	width: 157px;
-	-webkit-animation: balloon 30s infinite cubic-bezier(0.91, 0.01, 1, 0.89);
-	-moz-animation: balloon 30s infinite cubic-bezier(0.1, 0.1, 0.95, 0.5);
-	-o-animation: balloon 30s infinite cubic-bezier(0.1, 0.1, 0.95, 0.5);
-	animation: balloon 30s infinite cubic-bezier(0.1, 0.1, 0.95, 0.5);
-}
- @-webkit-keyframes balloon {
- 0% {
- right: -20%;
- -webkit-transform: rotate(0deg);
-}
- 5% {
- right: -20%;
- -webkit-transform: rotate(0deg);
-}
- 25% {
- -webkit-transform: rotate(0deg);
-}
- 100% {
- right: 120%;
- -webkit-transform: rotate(-30deg);
-}
-}
- @-moz-keyframes balloon {
- 0% {
- right: -20%;
- -moz-transform: rotate(0deg);
-}
- 5% {
- right: -20%;
- -moz-transform: rotate(0deg);
-}
- 25% {
- -moz-transform: rotate(0deg);
-}
- 100% {
- right: 120%;
- -moz-transform: rotate(-30deg);
-}
-}
- @-o-keyframes balloon {
- 0% {
- right: -20%;
- -o-transform: rotate(0deg);
-}
- 5% {
- right: -20%;
- -o-transform: rotate(0deg);
-}
- 25% {
- -o-transform: rotate(0deg);
-}
- 100% {
- right: 120%;
- -o-transform: rotate(-30deg);
-}
-}
- @keyframes balloon {
- 0% {
- right: -20%;
- transform: rotate(0deg);
-}
- 5% {
- right: -20%;
- transform: rotate(0deg);
-}
- 25% {
- transform: rotate(0deg);
-}
- 100% {
- right: 120%;
- transform: rotate(-30deg);
-}
-}
-/*-------- åœºæ™¯ç»„ä»¶ --------*/
-.skyline {
-	position: absolute;
-	z-index: 5;
-	width: 100%;
-	bottom: 26%;
-	background: url(images/skyline.png) repeat no-repeat;
-	height: 147px;
-}
-.beans {
-	position: absolute;
-	z-index: 4;
-	height: 201px;
-	width: 88px;
-	bottom: 30%;
-	left: 50%;
-	background: url(images/beans.png) no-repeat no-repeat;
-}
-.ground {
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-}
-.ground.front {
-	z-index: 30;
-	background: url(images/groundFront.png) repeat no-repeat center;
-	height: 301px;
-}
-.ground.mid {
-	z-index: 20;
-	background: url(images/groundMid.png) repeat no-repeat;
-	height: 299px;
-}
-.ground.back {
-	z-index: 10;
-	background: url(images/groundBack.png) repeat no-repeat center;
-	height: 281px;
-}
-.dowEventCenter {
-	position: absolute;
-	z-index: 12;
-	bottom: 20%;
-	left: 5%;
-	background: url(images/dowEventCenter.png) no-repeat no-repeat center;
-	height: 236px;
-	width: 524px;
-}
-.planetarium {
-	position: absolute;
-	z-index: 12;
-	bottom: 18%;
-	right: 10%;
-	background: url(images/Planetarium.png) no-repeat no-repeat center;
-	height: 285px;
-	width: 347px;
-}
-.friendshipShell {
-	position: absolute;
-	z-index: 21;
-	bottom: 18%;
-	left: 20%;
-	background: url(images/friendshipShell.png) no-repeat no-repeat center;
-	height: 370px;
-	width: 231px;
-}
-.glockenspiel {
-	position: absolute;
-	z-index: 11;
-	bottom: 26%;
-	right: 50%;
-	background: url(images/Glockenspiel.png) no-repeat no-repeat center;
-	height: 263px;
-	width: 137px;
-}
-
-.title {background-color:rgba(231,112,62,0.56); width:100%; position:fixed; top:0; left:0; font-size:12px; font-family:Verdana, Geneva, sans-serif; z-index:99999;}
-.title a {color:#FFF; text-decoration:none; line-height:24px; padding:0 10px; letter-spacing: 1px;}
-.title_r {float:right;}
-.title_l {float:left;}
-.title a:hover {background:#792e0e;}
-.footer {text-align:center;}
-.footer a {color:#CB653C; text-decoration:none; font-family:Verdana, Geneva, sans-serif; font-size:12px;}
-</style>
+<meta charset="gb2312">
+<title>ºÚÉ«Html5ÏìÓ¦Ê½¸öÈË²©¿ÍÄ£°å¡ª¡ªÖ÷Ìâ¡¶ÈçÓ°ËæĞÎ¡·</title>
+<meta name="keywords" content="¸öÈË²©¿ÍÄ£°å,²©¿ÍÄ£°å,ÏìÓ¦Ê½" />
+<meta name="description" content="ÈçÓ°ËæĞÎÖ÷ÌâµÄ¸öÈË²©¿ÍÄ£°å£¬ÉñÃØ¡¢ÇÎÆ¤¡£" />
+<link href="css/base.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<link href="css/media.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
 </head>
 <body>
-<div class="title">
-    <a class="title_l" target="_blank" title="è¿”å›é¦–é¡µ" href="http://www.jiawin.com"><strong>Â«</strong> è§‰å”¯</a>
-    
-</div>
-<section>
-  <div class="stage">
-    <div class="nightOverlay"></div>
-    <div class="skyline"></div>
-    <div class="beans"></div>
-    <div class="ground back"></div>
-    <div class="ground mid"></div>
-    <div class="ground front"></div>
-    <div class="cloud large"></div>
-    <div class="cloud small"></div>
-    <div class="cloud medium"></div>
-    <div class="balloon"></div>
-    <div class="dowEventCenter"></div>
-    <div class="planetarium"></div>
-    <div class="friendshipShell"></div>
-    <div class="glockenspiel"></div>
-    <div class="rotation">
-      <div class="sun"></div>
-      <div class="moon"></div>
+<div class="ibody">
+  <header>
+    <h1>ÈçÓ°ËæĞÎ</h1>
+    <h2>Ó°×ÓÊÇÒ»¸ö»áÈö»ÑµÄ¾«Áé£¬ËüÔÚĞé¿ÕÖĞÁ÷ÀËºÍµÈ´ı±»·¢ÏÖÖ®¼ä;ÔÚ´æÔÚÓë²»´æÔÚÖ®¼ä....</h2>
+    <div class="logo"><a href="/"></a></div>
+    <nav id="topnav"><a href="index.html">Ê×Ò³</a><a href="about.html">¹ØÓÚÎÒ</a><a href="newlist.html">ÂıÉú»î</a><a href="share.html">Ä£°å·ÖÏí</a><a href="new.html">Ä£°åÖ÷Ìâ</a></nav>
+  </header>
+  <article>
+    <div class="banner">
+      <ul class="texts">
+        <p>The best life is use of willing attitude, a happy-go-lucky life. </p>
+        <p>×îºÃµÄÉú»îÊÇÓÃĞÄ¸ÊÇéÔ¸µÄÌ¬¶È£¬¹ıËæÓö¶ø°²µÄÉú»î¡£</p>
+      </ul>
     </div>
-  </div>
-</section>
-<p class="footer"><a title="è§‰å”¯" target="_blank" href="http://www.jiawin.com/">By:www.jiawin.com</a></p>
+    <div class="bloglist">
+      <h2>
+        <p><span>ÍÆ¼ö</span>ÎÄÕÂ</p>
+      </h2>
+      <div class="blogs">
+        <h3><a href="/">·¸´íÁËÔõÃ´°ì£¿</a></h3>
+        <figure><img src="images/01.jpg" ></figure>
+        <ul>
+          <p>¿´µ½ÎôÈÕºÃÓÑ·¢ÁËÒ»ÆªÈÕÖ¾¡¶¾ÌÓÉ×ÔÈ¡¡·ËûËµËûÊÇÒ»¸ö±¯¹ÛÕß£¬¸Ğ¾õÉç»áÅ×ÆúÁËËû£¬Æ¢Æø¡¢ĞÔ¸ñÔÚ6ÄêµÄÊ±¼äÀï±ä»¯ºÜ´ó£¬ºÜÄÑÊÊÓ¦Õâ¸öÉç»á¡£ÈËÉúÆäÊµ¾ÍÊÇ²»¶Ï·¸´íµÄ¹ı³Ì£¬ÔÚÕâ¸ö¹ı³ÌÖĞ²»¶ÏµÄ·¸´í£¬²»¶ÏµÄÎüÈ¡½ÌÑµ£¬²»¶ÏµÄ³É³¤¡£Ò²ĞíÈÕ×ÓÀïµÄ¾ªÌÎº§ÀË£¬²»¹ıÊÇÈËÉúÖĞµÄË®»¨Ò¡»Î£¬±ğÓÃÏÔÎ¢¾µ·Å´óÄãµÄ±¯ÉË¡£</p>
+          <a href="/" target="_blank" class="readmore">ÔÄ¶ÁÈ«ÎÄ&gt;&gt;</a>
+        </ul>
+        <p class="autor"><span>×÷Õß£ºÑîÇà</span><span>·ÖÀà£º¡¾<a href="/">ÈÕ¼Ç</a>¡¿</span><span>ä¯ÀÀ£¨<a href="/">459</a>£©</span><span>ÆÀÂÛ£¨<a href="/">30</a>£©</span></p>
+        <div class="dateview">2014-04-08</div>
+      </div>
+      <div class="blogs">
+        <h3><a href="/">¸öÈË²©¿ÍÄ£°å£¨2014²İ¸ùÑ°ÃÎ£©</a></h3>
+        <figure><img src="images/02.jpg" ></figure>
+        <ul>
+          <p>2014µÚÒ»°æ¡¶²İ¸ùÑ°ÃÎ¡·¸öÈË²©¿ÍÄ£°å¼òµ¥¡¢ÓÅÑÅ¡¢ÎÈÖØ¡¢´óÆø¡¢µÍµ÷¡£×¨ÎªÄêÇáÓĞÖ¾ÏòÈ´ÓÖµÍµ÷µÄ²İ¸ùÕ¾³¤Éè¼Æ¡£Ä£°å²ÉÓÃhtml5+css3Éè¼Æ£¬navµ¼º½ÊµÏÖÊó±êĞüÍ£½¥±äÏÔÊ¾Ó¢ÎÄ±êÌâµÄĞ§¹û¡£banner²¿·Ö£¬Ñ¡Ôñ´óÍ¼×÷Îª±³¾°£¬ÀûÓÃcss3ÖĞanimationÊôĞÔ½áºÏÎÄ×ÖÍ¼Æ¬ÊµÏÖÎÄ×Ö´Ó×óµ½ÓÒµÄ½¥±äĞ§¹û</p>
+          <a href="/" target="_blank" class="readmore">ÔÄ¶ÁÈ«ÎÄ&gt;&gt;</a>
+        </ul>
+        <p class="autor"><span>×÷Õß£ºÑîÇà</span><span>·ÖÀà£º¡¾<a href="/">¸öÈË²©¿ÍÄ£°å</a>¡¿</span><span>ä¯ÀÀ£¨<a href="/">459</a>£©</span><span>ÆÀÂÛ£¨<a href="/">30</a>£©</span></p>
+        <div class="dateview">2014-02-19</div>
+      </div>
+      <div class="blogs">
+        <h3><a href="/">ÎÒµÄ¸öÈË²©¿ÍÖ®¡ª¡ª°¢ÀïÔÆ¿Õ¼äÑ¡Ôñ</a></h3>
+        <figure><img src="images/03.png" ></figure>
+        <ul>
+          <p>Ö®Ç°·şÎñÆ÷·ÅÔÚµçĞÅ»ú·¿£¬ ÁªÍ¨ÓÃ»§·ÃÎÊËÙ¶ÈºÜ²»ÎÈ¶¨£¬¾­³£³öÏÖ·ÃÎÊËÙ¶ÈÂıµÄÎÊÌâ£¬»»µ½°¢ÀïÔÆ½â¾öÁËÖ®Ç°µÄÎÊÌâ¡£ºÜ¶àÈË¶¼ÎÊÎÒµÄ²©¿ÍÑ¡µÃÊ²Ã´¿Õ¼ä£¬Ò»ÄêµÄ·ÑÓÃµÃ¶àÉÙÇ®£¬½ñÌìÎÒÁĞ¸ö±í³öÀ´£¬¹©´ó¼Ò²Î¿¼¡£</p>
+          <a href="/" target="_blank" class="readmore">ÔÄ¶ÁÈ«ÎÄ&gt;&gt;</a>
+        </ul>
+        <p class="autor"><span>×÷Õß£ºÑîÇà</span><span>·ÖÀà£º¡¾<a href="/">ÍøÕ¾½¨Éè</a>¡¿</span><span>ä¯ÀÀ£¨<a href="/">459</a>£©</span><span>ÆÀÂÛ£¨<a href="/">30</a>£©</span></p>
+        <div class="dateview">2014-01-18</div>
+      </div>
+      <div class="blogs">
+        <h3><a href="/">´ÓÉãÓ°×÷Æ·ÖĞ»ñÈ¡ÍøÒ³ÑÕÉ«´îÅä¼¼ÇÉ</a></h3>
+        <figure><img src="images/04.jpg" ></figure>
+        <ul>
+          <p>×÷ÎªÒ»¸öÓÅĞã¡¢×¨ÒµµÄÍøÒ³Éè¼ÆÊ¦£¬Ê×ÏÈÒªÁË½â¸÷ÖÖÑÕÉ«µÄÏóÕ÷£¬ÒÔ¼°²»Í¬ÀàĞÍÍøÕ¾³£ÓÃµÄÉ«²Ê´îÅä¡£É«²Ê´îÅä¿´ËÆ¸´ÔÓ,µ«²¢²»ÉñÃØ¡£Ò»°ãÀ´Ëµ,ÍøÒ³µÄ±³¾°É«Ó¦¸ÃÈáºÍÒ»Ğ©¡¢ËØÒ»Ğ©¡¢µ­Ò»Ğ©,ÔÙÅäÉÏÉîÉ«µÄÎÄ×Ö,Ê¹ÈË¿´ÆğÀ´×ÔÈ»¡¢Êæ³©¡£É«²ÊÊÇÈËµÄÊÓ¾õ×îÃô¸ĞµÄ¶«Î÷¡£Ö÷Ò³µÄÉ«²Ê´¦ÀíµÃºÃ£¬¿ÉÒÔ½õÉÏÌí»¨£¬´ïµ½ÊÂ°ë¹¦±¶µÄĞ§¹û¡£</p>
+          <a href="/" target="_blank" class="readmore">ÔÄ¶ÁÈ«ÎÄ&gt;&gt;</a>
+        </ul>
+        <p class="autor"><span>×÷Õß£ºÑîÇà</span><span>·ÖÀà£º¡¾<a href="/">ĞÄµÃ±Ê¼Ç</a>¡¿</span><span>ä¯ÀÀ£¨<a href="/">459</a>£©</span><span>ÆÀÂÛ£¨<a href="/">30</a>£©</span></p>
+        <div class="dateview">2014-01-09</div>
+      </div>
+      <div class="blogs">
+        <h3><a href="/">css3ÖÆ×÷µÄÒ»¸öÄ§·½</a></h3>
+        <figure><img src="images/04.png" ></figure>
+        <ul>
+          ±¾Ó¦ÓÃÓÉCSS3´úÂëÊµÏÖ£¬ÎŞÍ¼Æ¬ºÍflash£¬ÇëÊ¹ÓÃChromeµÈwebkitÄÚºËä¯ÀÀÆ÷»òFirefox´ò¿ª¡£ÆÆ½â¹¥ÂÔºÍ´ó¼Ò·ÖÏíÏÂ£ºÊ×ÏÈ£¬ÆÆ½âÄ§·½£¬ÎÒÃÇ¾ÍÒªÏÈÁË½âËüµÄ½á¹¹£¬Ä§·½¹²6É«6Ãæ£¬Ã¿ÃæÓÖ·ÖÎªÖĞÑë¿é£¨×îÖĞ¼äµÄ¿é6¸ö£©¡¢½Ç¿é£¨4½ÇµÄ¿é8¸ö£©ºÍ±ß¿é£¨4Ìõ±ßÖĞ¼äµÄ¿é12¸ö£©...
+          </p>
+          <a href="/" target="_blank" class="readmore">ÔÄ¶ÁÈ«ÎÄ&gt;&gt;</a>
+        </ul>
+        <p class="autor"><span>×÷Õß£ºÑîÇà</span><span>·ÖÀà£º¡¾<a href="/">css3</a>¡¿</span><span>ä¯ÀÀ£¨<a href="/">459</a>£©</span><span>ÆÀÂÛ£¨<a href="/">30</a>£©</span></p>
+        <div class="dateview">2013-09-05</div>
+      </div>
+    </div>
+  </article>
+  <aside>
+    <div class="avatar"><a href="about.html"><span>¹ØÓÚÑîÇà</span></a></div>
+    <div class="topspaceinfo">
+      <h1>Ö´×ÓÖ®ÊÖ£¬Óë×ÓÙÉÀÏ</h1>
+      <p>ÓÚÇ§ÍòÈËÖ®ÖĞ£¬ÎÒÓö¼ûÁËÎÒËùÓö¼ûµÄÈË....</p>
+    </div>
+    <div class="about_c">
+      <p>ÍøÃû£ºDanceSmile | ¼´²½·ÇÑÌ</p>
+      <p>Ö°Òµ£ºWebÇ°¶ËÉè¼ÆÊ¦¡¢ÍøÒ³Éè¼Æ </p>
+      <p>¼®¹á£ºËÄ´¨Ê¡¡ª³É¶¼ÊĞ</p>
+      <p>µç»°£º13662012345</p>
+      <p>ÓÊÏä£ºdancesmiling@qq.com</p>
+    </div>
+    <div class="bdsharebuttonbox"><a href="#" class="bds_qzone" data-cmd="qzone" title="·ÖÏíµ½QQ¿Õ¼ä"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="·ÖÏíµ½ĞÂÀËÎ¢²©"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="·ÖÏíµ½ÌÚÑ¶Î¢²©"></a><a href="#" class="bds_renren" data-cmd="renren" title="·ÖÏíµ½ÈËÈËÍø"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="·ÖÏíµ½Î¢ĞÅ"></a><a href="#" class="bds_more" data-cmd="more"></a></div>
+    <div class="tj_news">
+      <h2>
+        <p class="tj_t1">×îĞÂÎÄÕÂ</p>
+      </h2>
+      <ul>
+        <li><a href="/">·¸´íÁËÔõÃ´°ì£¿</a></li>
+        <li><a href="/">Á½Ö»ÎÏÅ£¼èÄÑÓÖÀËÂşµÄÒ»ÎÇ</a></li>
+        <li><a href="/">´ºÅ¯»¨¿ª-×ß×ßÍ£Í£-·¢ÏÖÃÀ</a></li>
+        <li><a href="/">çüÖÇ¹ú¼Ê-Nativ for Life¹Ù·½ÍøÕ¾</a></li>
+        <li><a href="/">¸öÈË²©¿ÍÄ£°å£¨2014²İ¸ùÑ°ÃÎ£©</a></li>
+        <li><a href="/">¼òµ¥ÊÖ¹¤Ö½Ãµ¹å</a></li>
+        <li><a href="/">ÏìÓ¦Ê½¸öÈË²©¿ÍÄ£°å£¨À¶É«ÇåĞÂ£©</a></li>
+        <li><a href="/">À¶É«Õş¸®£¨ÎÀÉú¼Æ»®ÉúÓı¾Ö£©ÍøÕ¾</a></li>
+      </ul>
+      <h2>
+        <p class="tj_t2">ÍÆ¼öÎÄÕÂ</p>
+      </h2>
+      <ul>
+        <li><a href="/">·¸´íÁËÔõÃ´°ì£¿</a></li>
+        <li><a href="/">Á½Ö»ÎÏÅ£¼èÄÑÓÖÀËÂşµÄÒ»ÎÇ</a></li>
+        <li><a href="/">´ºÅ¯»¨¿ª-×ß×ßÍ£Í£-·¢ÏÖÃÀ</a></li>
+        <li><a href="/">çüÖÇ¹ú¼Ê-Nativ for Life¹Ù·½ÍøÕ¾</a></li>
+        <li><a href="/">¸öÈË²©¿ÍÄ£°å£¨2014²İ¸ùÑ°ÃÎ£©</a></li>
+        <li><a href="/">¼òµ¥ÊÖ¹¤Ö½Ãµ¹å</a></li>
+        <li><a href="/">ÏìÓ¦Ê½¸öÈË²©¿ÍÄ£°å£¨À¶É«ÇåĞÂ£©</a></li>
+        <li><a href="/">À¶É«Õş¸®£¨ÎÀÉú¼Æ»®ÉúÓı¾Ö£©ÍøÕ¾</a></li>
+      </ul>
+    </div>
+    <div class="links">
+      <h2>
+        <p>ÓÑÇéÁ´½Ó</p>
+      </h2>
+      <ul>
+        <li><a href="/">ÑîÇà¸öÈË²©¿Í</a></li>
+        <li><a href="/">3DST¼¼ÊõÉçÇø</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <ul>
+        <p> Design by <a href="/">DanceSmile</a></p>
+        <p>ÊñICP±¸11002373ºÅ-1</p>
+        </p>
+      </ul>
+    </div>
+  </aside>
+  <script src="js/silder.js"></script>
+  <div class="clear"></div>
+  <!-- Çå³ı¸¡¶¯ --> 
+</div>
 </body>
 </html>
